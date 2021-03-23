@@ -1,0 +1,13 @@
+<%= form_with(model: @user_registration_form, url: user_registrations_path, local: true) do |form| %>
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address %>
+  </div>
+  <div class="actions">
+    <%= form.submit "登録する" %>
+  </div>
+<% end %>

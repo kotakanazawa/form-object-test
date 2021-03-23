@@ -1,0 +1,11 @@
+<div class="wrapper">
+  <div class="btn">
+    <%= link_to '登録する', new_user_registration_path %>
+  </div>
+  <div class="formats">
+    <% @users.each do |user| %>
+      <div class="name">ユーザー情報：<%= user.name %></div>
+      <div class="name">住所情報：<%= user.address%></div>
+    <% end %>
+  </div>
+</div>
